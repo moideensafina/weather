@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@600&family=Permanent+Marker&family=Poppins:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    user-select: none;
+    transition: all .3s ease;
+}
+body{
+    background-color: black; 
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+}
+.navbar .img{
+    padding: 20px;
+    font-size: 20px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;  
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.nav-list li:hover{
+    border-bottom: 1.4px solid white;
+}
+.navbar span{
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face{
+    margin-top: 70px;
+     margin: 40px;
+}
+.face h1{
+    font-size: 28px;
+}
+.face .news p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.face .getinputs{
+    display: flex;
+    margin: 10px;
+}
+.face #input{
+    margin-top: 30px;
+    height: 40px;
+    width: 400px;
+    background-color:black ;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+.face #input:focus{
+    border: 1px solid blueviolet;
+}
+.face button{
+    margin-top: 30px;
+    height: 40px;
+    width: 70px;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 0px 10px 10px 0px;
+}
+.face button:hover{
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    background-color: black;
+}
+.face p{
+    margin-top: 20px;
+}
+
+.info{
+    border-radius: 40px 210px 40px 210px;
+    border:2px dotted aliceblue;
+    margin-top: 70px;
+    width: 45%;
+    height: 550px;
+    display: none;
+    color: white;
+    overflow: hidden;
+}
+.info .header{
+        text-align: center; 
+        padding-top: 50px;
+        padding-bottom: 10px;
+        color: azure;
+        border-bottom: 3px solid white;
+        
+}
+.info .header h1{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Permanent Marker', cursive;
+    word-spacing: 6px;
+}
+.info .report{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 27px;
+}
+.info .report h2{
+    padding: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    padding-left: 0;
+}
+
+.info .report #icon{
+     margin: 20px;
+}
+.output {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.info .output .digit h2{
+    margin-top: 20px;
+}
+.info .list-info h2{
+    margin-top: 10px;
+}
+.info .list-info div{
+    margin-top: 10px;
+    cursor: pointer;
+}
+#covertervalue{
+    margin-top: 10px;
+    font-size: 25px;
+}
+@media(width<=1200px){
+    
+}
+@media(width <= 600px){
+    
+    .nav-list{
+        display: none;
+    }
+    .navbar span{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .face{
+        margin: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    .info{
+        margin: 20px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .info .report{
+       flex-direction: column;
+       justify-content: center;
+    }
+    .info .output{
+        flex-direction: column;
+    }
+    .info .report h2{
+        	margin-left: 18px;
+    }
+    .info .output .digit h2{
+            margin-left: 18px;
+    }
+    .info .list-info{
+            margin-left: 20px;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
